@@ -1,0 +1,36 @@
+---
+import { WORK } from '../lib/constants'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import TopLayout from '../layouts/TopLayout.astro'
+import BottomLayout from '../layouts/BottomLayout.astro'
+import ProjectCard from '../components/ProjectCard.astro'
+
+
+interface Project {
+  contentTypeId: 'Projects'
+  fields: {
+
+  }
+}
+
+---
+
+<BaseLayout
+  title="Portfolio"
+  description="Projects and some clone's that I did"
+>
+  <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
+    <TopLayout>
+      <h2
+        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+      >
+        Projects and clone's
+      </h2>
+    </TopLayout>
+    <BottomLayout>
+      <div class="flex w-full flex-wrap justify-center gap-2">
+        Proccesing
+      </div>
+    </BottomLayout>
+  </main>
+</BaseLayout>
