@@ -54,5 +54,6 @@ Contributions are welcome! If you have ideas or improvements, please open an iss
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-Credits: https://github.com/bue221
+
 ---
+Credits: https://github.com/bue221
