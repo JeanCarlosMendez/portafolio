@@ -2,7 +2,7 @@
 import Card from '../Card.astro'
 import { Button } from '../ui/button'
 import { LINKS } from '../../lib/constants'
-import { Linkedin, Github, Mail } from 'lucide-react'
+import { Linkedin, Github, Mail, Youtube } from 'lucide-react'
 ---
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-2">
@@ -10,12 +10,10 @@ import { Linkedin, Github, Mail } from 'lucide-react'
     <div class="flex flex-col justify-between gap-4 md:max-h-[300px]">
       <div class="flex h-full flex-col">
         <h6 class="m-0 text-sm font-light text-gray-500">welcome</h6>
-        <p class="m-0 text-xl font-light">
-          Hi, I'm <b class="font-bold">Jean Carlos Mendez</b>, a passionate Junior Software Engineer 
-          with a focus on web design and application development. I have experience in creating 
-          attractive and functional websites as well as developing efficient applications. 
-          I have had the privilege of being involved in impactful projects, such as creating 
-          websites to improve user experience.
+        <p class="m-0 text-xl font-light" >
+          Hi, I'm <b class="font-bold">Jean Carlos Mendez</b>, a passionate Junior Software Engineer with a focus on web development. 
+          I have experience building responsive, user-friendly websites and developing efficient web applications. 
+          I've contributed to impactful projects, including enhancing user experience through web design and functionality.
         </p>
       </div>
       <div class="flex gap-4">
@@ -35,6 +33,12 @@ import { Linkedin, Github, Mail } from 'lucide-react'
           <Button>
             <Mail />
             <span class="sr-only">Email contact</span>
+          </Button>
+        </a>
+        <a href={LINKS.youtube} aria-label="youtube canal" target="_blank">
+          <Button>
+            <Youtube />
+            <span class="sr-only">youtube canal</span>
           </Button>
         </a>
       </div>

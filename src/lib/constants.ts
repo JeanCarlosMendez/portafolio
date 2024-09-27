@@ -11,6 +11,7 @@ export const LINKS = {
   github: 'https://github.com/JeanCarlosMendez',
   linkedin: 'https://www.linkedin.com/in/jean-carlos-mendez-7ab547291/',
   mail: 'mailto:jeancarlosmendez983@gmail.com',
+  youtube: 'https://www.youtube.com/@Costagrammer',
   instagram: 'https://www.instagram.com/',
   medium: 'https://ladvace.medium.com/',
   discord: 'https://discordapp.com/',
@@ -85,8 +86,7 @@ export const EXPERIENCE = [
     link: 'https://stone.com.co/',
     end: 'Current',
     tasks: [
-      'Integration IA services with react and tailwind css',
-      'Development and build of DB with mongoDB',
+      'Involved in custom software development with .NET and JavaScript, creating tailored applications with seamless integration through REST and SOAP APIs. Experienced in designing efficient user interfaces using DevExpress and Razor, and performing basic tasks in SQL Server for data management.',
     ],
   },
   {
@@ -97,8 +97,7 @@ export const EXPERIENCE = [
     start: '2024',
     end: '2024',
     tasks: [
-      'Development of the Imaginamos platform with the use of React, Redux, and Material UI',
-      'Work in ETB project with the use of React, Redux, and Material UI',
+      'Configured and integrated tools like Zabbix, Prometheus, and OpenNMS for continuous infrastructure monitoring. Verified device connectivity, ensuring proper operation and availability. Also provided technical support by resolving issues and facilitating communication between operational teams.',
     ],
   },
 ]
