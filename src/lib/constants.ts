@@ -9,7 +9,7 @@ export const loaderAnimation = [
 
 export const LINKS = {
   github: 'https://github.com/JeanCarlosMendez',
-  linkedin: 'www.linkedin.com/in/jean-carlos-mendez-7ab547291',
+  linkedin: 'https://www.linkedin.com/in/jean-carlos-mendez-7ab547291/',
   mail: 'mailto:jeancarlosmendez983@gmail.com',
   instagram: 'https://www.instagram.com/',
   medium: 'https://ladvace.medium.com/',
