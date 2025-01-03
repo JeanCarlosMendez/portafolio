@@ -27,7 +27,7 @@ export const SITE: Site = {
 
 // Work Page
 export const WORK: Page = {
-  TITLE: 'Work',
+  TITLE: 'Trabajos',
   DESCRIPTION: 'Places I have worked.',
 }
 
@@ -39,7 +39,7 @@ export const BLOG: Page = {
 
 // Projects Page
 export const PROJECTS: Page = {
-  TITLE: 'Projects',
+  TITLE: 'Proyectos',
   DESCRIPTION: 'Recent projects I have worked on.',
 }
 
@@ -81,23 +81,23 @@ export const EXPERIENCE = [
   {
     company: 'Stone Colombia',
     location: 'Bogotá D C, Colombia',
-    position: 'Software Engineer',
+    position: 'Ingeniero de desarrollo',
     start: '2023',
     link: 'https://stone.com.co/',
     end: 'Current',
     tasks: [
-      'Involved in custom software development with .NET and JavaScript, creating tailored applications with seamless integration through REST and SOAP APIs. Experienced in designing efficient user interfaces using DevExpress and Razor, and performing basic tasks in SQL Server for data management.',
+      'Involucrado en el desarrollo de software a medida con .NET y JavaScript, creando aplicaciones personalizadas con integración fluida a través de APIs REST y SOAP. Experto en el diseño de interfaces de usuario eficientes utilizando DevExpress y Razor, y en la realización de tareas básicas en SQL Server para la gestión de datos.',
     ],
   },
   {
     company: 'ETB Colombia',
     link: 'https://etb.com/',
     location: 'Bogotá D C, Colombia',
-    position: 'Technical Support Analyst',
+    position: 'Analista de Soporte Técnico',
     start: '2024',
     end: '2024',
     tasks: [
-      'Configured and integrated tools like Zabbix, Prometheus, and OpenNMS for continuous infrastructure monitoring. Verified device connectivity, ensuring proper operation and availability. Also provided technical support by resolving issues and facilitating communication between operational teams.',
+      'Configuré e integré herramientas como Zabbix, Prometheus y OpenNMS para el monitoreo continuo de la infraestructura. Verifiqué la conectividad de los dispositivos, asegurando su correcto funcionamiento y disponibilidad. También brindé soporte técnico resolviendo problemas y facilitando la comunicación entre los equipos operativos.',
     ],
   },
 ]
