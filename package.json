@@ -6,6 +6,9 @@
     "name": "AREA44"
   },
   "license": "MIT",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "build": "astro build",
     "dev": "astro dev",
