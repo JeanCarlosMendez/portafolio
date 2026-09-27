@@ -1,8 +1,3 @@
 {
-  "installCommand": "pnpm install",
-  "buildCommand": "astro build",
-  "outputDirectory": "dist",
-  "github": {
-    "silent": true
-  }
+  "installCommand": "corepack enable && pnpm install"
 }
