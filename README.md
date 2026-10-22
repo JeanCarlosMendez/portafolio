@@ -4,9 +4,6 @@
 
 This template helps you build a portfolio using Astro, Tailwind CSS, and Shadcn UI.
 
-## Credits
-Credits: https://github.com/bue221
-
 ## Technologies Used
 
 This project utilizes the following technologies:
