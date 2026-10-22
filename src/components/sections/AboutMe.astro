@@ -2,22 +2,24 @@
 import Card from '../Card.astro'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="Sobre Mí">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="Sobre mí" titleEn="About me">
   <div class="flex flex-col gap-2">
     <p class="text-sm font-light">
-      Hola, soy Jean Carlos, un desarrollador de software fullstack de Colombia 🇨🇴.
+      <span data-lang-es>Soy desarrollador de software de Colombia, enfocado en backend y soluciones full stack para procesos de negocio.</span>
+      <span data-lang-en hidden>I am a software developer from Colombia focused on backend and full stack solutions for business processes.</span>
       <br />
       <br />
-      Mis herramientas principales incluyen:
+      <span data-lang-es>Mis herramientas principales incluyen:</span><span data-lang-en hidden>My main tools include:</span>
       <ul class="list-inside list-disc">
-        <li>JavaScript</li>
-        <li>DevExpress</li>
-        <li>.NET C#</li>
-        <li>SQL Server</li>
+        <li>C# <span data-lang-es>y</span><span data-lang-en hidden>and</span> .NET 8</li>
+        <li>ASP.NET Core <span data-lang-es>y</span><span data-lang-en hidden>and</span> REST APIs</li>
+        <li>SQL Server <span data-lang-es>y</span><span data-lang-en hidden>and</span> T-SQL</li>
+        <li>JWT, RSA y OWASP</li>
       </ul>
     </p>
     <p class="text-sm font-light">
-      Más allá de la programación, disfruto del tiempo en familia, relajarme en casa y ver películas.
+      <span data-lang-es>También comparto contenido sobre programación en YouTube y exploro Android, Flutter e integraciones con IA.</span>
+      <span data-lang-en hidden>I also share programming content on YouTube and explore Android, Flutter, and AI integrations.</span>
     </p>
   </div>
 </Card>

@@ -19,40 +19,40 @@ export const LINKS = {
 
 // Global
 export const SITE: Site = {
-  TITLE: 'Astro Sphere',
+  TITLE: 'CostaGrammer | Ingeniero de Software',
   DESCRIPTION:
-    'Welcome to Astro Sphere, a portfolio and blog for designers and developers.',
-  AUTHOR: 'Mark Horn',
+    'Portafolio de Jean Carlos Mendez: desarrollo backend y full stack con C#, .NET, APIs REST y SQL Server.',
+  AUTHOR: 'Jean Carlos Mendez',
 }
 
 // Work Page
 export const WORK: Page = {
-  TITLE: 'Trabajos',
-  DESCRIPTION: 'Places I have worked.',
+  TITLE: 'Experiencia profesional',
+  DESCRIPTION: 'Experiencia de Jean Carlos Mendez en desarrollo de software y soporte tecnológico.',
 }
 
 // Blog Page
 export const BLOG: Page = {
   TITLE: 'Blog',
-  DESCRIPTION: 'Writing on topics I am passionate about.',
+  DESCRIPTION: 'Contenido sobre desarrollo de software.',
 }
 
 // Projects Page
 export const PROJECTS: Page = {
   TITLE: 'Proyectos',
-  DESCRIPTION: 'Recent projects I have worked on.',
+  DESCRIPTION: 'Áreas y soluciones en las que trabajo como ingeniero de software.',
 }
 
 // Search Page
 export const SEARCH: Page = {
-  TITLE: 'Search',
-  DESCRIPTION: 'Search all posts and projects by keyword.',
+  TITLE: 'Buscar',
+  DESCRIPTION: 'Buscar contenido por palabra clave.',
 }
 
 // Study Page
 export const STUDIES = [
   {
-    title: 'Software',
+    title: 'Analista y desarrollador de software',
     institution: 'SENA',
     link: 'https://oferta.senasofiaplus.edu.co/',
     date: '2022 - 2024',
@@ -79,25 +79,33 @@ export const STUDIES = [
 
 export const EXPERIENCE = [
   {
-    company: 'Stone Colombia',
-    location: 'Bogotá D C, Colombia',
-    position: 'Ingeniero de desarrollo',
-    start: '2023',
+    company: 'STONE Colombia',
+    location: 'Remoto, Colombia',
+    position: 'Ingeniero de desarrollo de software',
+    positionEn: 'Software Development Engineer',
+    start: 'Oct 2023',
     link: 'https://stone.com.co/',
-    end: 'Current',
+    end: 'Actualidad',
+    endEn: 'Present',
     tasks: [
-      'Involucrado en el desarrollo de software a medida con .NET y JavaScript, creando aplicaciones personalizadas con integración fluida a través de APIs REST y SOAP. Experto en el diseño de interfaces de usuario eficientes utilizando DevExpress y Razor, y en la realización de tareas básicas en SQL Server para la gestión de datos.',
+      'Desarrollo y mantenimiento de aplicaciones empresariales con C#, .NET 8 y .NET Framework.',
+      'Implementación de interfaces con ASP.NET Core MVC, Razor, JavaScript, DevExpress y DevExtreme.',
+      'Integración de APIs REST y SOAP, acceso a SQL Server mediante ADO.NET y procedimientos almacenados.',
+      'Participación en seguridad de aplicaciones, autenticación, sesiones y despliegues en IIS.',
     ],
   },
   {
     company: 'ETB Colombia',
     link: 'https://etb.com/',
-    location: 'Bogotá D C, Colombia',
-    position: 'Analista de Soporte Técnico',
-    start: '2024',
-    end: '2024',
+    location: 'Híbrido, Colombia',
+    position: 'Analista de Monitoreo y Soporte Técnico',
+    positionEn: 'Monitoring and Technical Support Analyst',
+    start: 'Abr 2024',
+    end: 'Oct 2024',
+    endEn: 'Oct 2024',
     tasks: [
-      'Configuré e integré herramientas como Zabbix, Prometheus y OpenNMS para el monitoreo continuo de la infraestructura. Verifiqué la conectividad de los dispositivos, asegurando su correcto funcionamiento y disponibilidad. También brindé soporte técnico resolviendo problemas y facilitando la comunicación entre los equipos operativos.',
+      'Configuración e integración de Zabbix, Prometheus y OpenNMS para monitoreo de infraestructura.',
+      'Validación de conectividad, disponibilidad de dispositivos y atención de incidentes técnicos.',
     ],
   },
 ]

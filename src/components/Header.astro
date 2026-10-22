@@ -38,8 +38,49 @@ import { ModeToggle } from '../components/ui/ThemeToggle'
         >
           GitHub
         </a>
+        <button
+          id="language-toggle"
+          type="button"
+          class={buttonVariants({ variant: 'ghost' })}
+          aria-label="Cambiar idioma"
+        >
+          EN
+        </button>
         <ModeToggle transition:persist client:load />
       </nav>
     </div>
   </div>
 </header>
+
+<script is:inline>
+  const applyLanguage = (language) => {
+    document.documentElement.lang = language
+    document.querySelectorAll('[data-lang-es]').forEach((element) => {
+      element.hidden = language !== 'es'
+    })
+    document.querySelectorAll('[data-lang-en]').forEach((element) => {
+      element.hidden = language !== 'en'
+    })
+    const toggle = document.querySelector('#language-toggle')
+    if (toggle) {
+      toggle.textContent = language === 'es' ? 'EN' : 'ES'
+      toggle.setAttribute('aria-label', language === 'es' ? 'Switch to English' : 'Cambiar a español')
+    }
+    localStorage.setItem('language', language)
+  }
+
+  window.toggleLanguage = () => {
+    const language = document.documentElement.lang === 'es' ? 'en' : 'es'
+    applyLanguage(language)
+  }
+
+  const initializeLanguage = () => {
+    applyLanguage(localStorage.getItem('language') || 'es')
+  }
+
+  document.addEventListener('astro:after-swap', initializeLanguage)
+  document.addEventListener('DOMContentLoaded', initializeLanguage)
+  document.addEventListener('click', (event) => {
+    if (event.target.closest('#language-toggle')) window.toggleLanguage()
+  })
+</script>

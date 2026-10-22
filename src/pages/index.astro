@@ -3,12 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import IntroCard from '../components/sections/IntroCard.astro'
 import AboutMe from '../components/sections/AboutMe.astro'
 import Card from '../components/Card.astro'
-import TimeZoneCard from '../components/sections/TimeZoneCard.astro'
-import ContactsCard from '../components/sections/ContactsCard.astro'
 import Now from '../components/sections/Now.astro'
 import CVCard from '../components/sections/CVCard.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
-import TattooCard from '../components/sections/TattooCard.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
 //
 // import { motion, AnimatePresence } from 'framer-motion'
@@ -38,8 +35,8 @@ import StudyCard from '../components/sections/StudyCard.astro'
 </script>
 
 <BaseLayout
-  title="CostaGrammer"
-  description="Welcome"
+  title="CostaGrammer | Ingeniero de Software"
+  description="Portafolio profesional de Jean Carlos Mendez, especialista en backend y desarrollo full stack con .NET."
 >
   <div
     slot="loader"
@@ -57,6 +54,7 @@ import StudyCard from '../components/sections/StudyCard.astro'
       colSpan="md:col-span-1"
       rowSpan="md:row-span-1"
       title="Proyectos"
+      titleEn="Projects"
       href="/portfolio"
     />
     <ExperienceCard />
@@ -64,7 +62,8 @@ import StudyCard from '../components/sections/StudyCard.astro'
     <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
       <div class="flex h-full flex-col justify-between">
         <blockquote class="mt-6 border-l-2 pl-6 italic">
-          “Si puedes imaginarlo, puedes programarlo.”
+          <span data-lang-es>“Si puedes imaginarlo, puedes programarlo.”</span>
+          <span data-lang-en hidden>“If you can imagine it, you can program it.”</span>
         </blockquote>
         <p class="mt-2 text-xs">- Alejandro Taboada</p>
       </div>

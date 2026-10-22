@@ -25,7 +25,7 @@ import { EXPERIENCE } from '../lib/constants'
           EXPERIENCE.map((entry) => (
             <li class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25">
               <div class="mb-4 text-sm uppercase">
-                {entry.start} - {entry.end}
+                {entry.start} - <span data-lang-es>{entry.end}</span><span data-lang-en hidden>{entry.endEn}</span>
               </div>
               <a
                 href={entry.link ?? ''}
@@ -33,7 +33,9 @@ import { EXPERIENCE } from '../lib/constants'
               >
                 {entry.company}
               </a>
-              <div class="text-sm font-semibold">{entry.position}</div>
+              <div class="text-sm font-semibold">
+                <span data-lang-es>{entry.position}</span><span data-lang-en hidden>{entry.positionEn}</span>
+              </div>
               <article class="prose dark:prose-invert">
                 {entry.tasks.map((i) => (
                   <>{i}</>
@@ -44,7 +46,7 @@ import { EXPERIENCE } from '../lib/constants'
         }
       </ul>
       <br/>
-      <a href="/" rel="noreferrer" class={buttonVariants()}> Regresar al inicio</a>
+      <a href="/" rel="noreferrer" class={buttonVariants()}><span data-lang-es>Regresar al inicio</span><span data-lang-en hidden>Back home</span></a>
     </BottomLayout>
   </main>
 </BaseLayout>

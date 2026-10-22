@@ -5,6 +5,7 @@ import { SquareArrowOutUpRight } from 'lucide-react'
 
 interface Props {
   title?: string
+  titleEn?: string
   body?: string
   colSpan?: string
   rowSpan?: string
@@ -12,7 +13,7 @@ interface Props {
   colorText?: string
 }
 
-const { title, body, colSpan, rowSpan, href, colorText } = Astro.props
+const { title, titleEn, body, colSpan, rowSpan, href, colorText } = Astro.props
 ---
 
 <ShadcnCard
@@ -27,12 +28,12 @@ const { title, body, colSpan, rowSpan, href, colorText } = Astro.props
           className="group-hover:text-primary position absolute right-6 "
           size={20}
         />
-        <ContentCard title={title} body={body}>
+        <ContentCard title={title} titleEn={titleEn} body={body}>
           <slot />
         </ContentCard>
       </a>
     ) : (
-      <ContentCard title={title} body={body}>
+      <ContentCard title={title} titleEn={titleEn} body={body}>
         <slot />
       </ContentCard>
     )

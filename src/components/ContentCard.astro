@@ -1,14 +1,24 @@
 ---
 interface Props {
   title?: string
+  titleEn?: string
   body?: string
 }
 
-const { title, body } = Astro.props
+const { title, titleEn, body } = Astro.props
 ---
 
 <>
-  {title && <h2 class="z-20 m-0 text-xl font-bold">{title}</h2>}
+  {title && (
+    <h2 class="z-20 m-0 text-xl font-bold">
+      {titleEn ? (
+        <>
+          <span data-lang-es>{title}</span>
+          <span data-lang-en hidden>{titleEn}</span>
+        </>
+      ) : title}
+    </h2>
+  )}
   {body && <p class="m-0 text-base font-light">{body}</p>}
   <slot />
 </>
